@@ -95,7 +95,7 @@ def analyze_flow(flow: dict[str, Any]) -> dict[str, Any]:
         "score": score,
         "severity": severity,
         "reasons": reasons or [
-            "No configured single-flow rule was triggered"
+            "No individual-flow rule triggered; multi-flow analysis detected suspicious activity."
         ],
         "features": {
             "packets": packets,
